@@ -22,9 +22,26 @@ nav ul li{
     justify-content: center;
     gap: 10px;
 }
-.movie-carrousel{
+.buscador{
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(242 242 242);
+    color: black;
+    padding: 0 15px;
+    height: 25px ;
+}
+input:focus{
+    outline: 1px rgb(242 242 245);
+}
+section{
     width: 100%;
     height: 500px;
+}
+.movie-carrousel{
+    background-size: cover;      
+    background-position: center;   
+    background-repeat: no-repeat;
+    min-height: 100vh; 
     position: inherit;
 }
 .movie-carrousel-description{
