@@ -10,13 +10,45 @@ nav, nav ul, .search-bar{
 }
 nav{
     justify-content: space-between;
+    position: relative;
 }
+
 nav ul {
     flex-direction: row;
 }
 nav ul li{
     list-style: none;
     margin: 0 50px;
+}
+.oculto{
+    display: none;
+}
+.buscador-ampliado{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+.closeBuscador{
+    margin: 0 15px;
+}
+.closeBuscador:hover{
+    cursor: pointer;
+}
+.buscador_principal{
+    width: 700px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(242 242 242);
+    color: black;
+    padding: 0 15px;
+    height: 50px ;
+}
+.buscador_principal:focus{
+    outline: blue;
 }
 .search-bar{
     justify-content: center;

@@ -1,3 +1,22 @@
+
+const buscador = document.querySelector(".buscador");
+const contenedorbuscador = document.querySelector("#contenedorBuscadorPrincipal");
+const cerrarContenedor = document.querySelector(".closeBuscador")
+
+buscador.addEventListener("click",manejoDeContenedor);
+cerrarContenedor.addEventListener("click",manejoDeContenedor);
+
+function manejoDeContenedor(){
+    console.log("hola")
+    if(contenedorbuscador.className == "oculto"){
+        contenedorbuscador.className = "buscador-ampliado";
+    }
+    else{
+        contenedorbuscador.className = "oculto";
+    }
+}
+
+
 const options = {
   method: 'GET',
   headers: {
