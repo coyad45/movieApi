@@ -92,9 +92,21 @@ section{
     background-repeat: no-repeat;
     min-height: 100vh; 
     position: inherit;
+    color: white;
 }
 .movie-carrousel-description{
     position: absolute;
-    right: 25em;
-    bottom: 15em;
+    right: 20em;
+    bottom: 10em;
+    
+}
+.movie-carrousel-description p{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.movie-carrousel-description h1{
+    font-size: 36px;
+    font-weight: bolder;
+    
 }
