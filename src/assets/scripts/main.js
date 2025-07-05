@@ -1,20 +1,35 @@
 
 const buscador = document.querySelector(".buscador");
 const contenedorbuscador = document.querySelector("#contenedorBuscadorPrincipal");
-const cerrarContenedor = document.querySelector(".closeBuscador")
+const cerrarContenedor = document.querySelector(".closeBuscador");
+const userImg = document.querySelector("#user-img");
+const userContenedor = document.querySelector("#userContenedor");
 
-buscador.addEventListener("click",manejoDeContenedor);
-cerrarContenedor.addEventListener("click",manejoDeContenedor);
+buscador.addEventListener("click",manejoDeContenedorBuscador);
+cerrarContenedor.addEventListener("click",manejoDeContenedorBuscador);
+userImg.addEventListener("click",manejoDeContenedorUsuario);
 
-function manejoDeContenedor(){
+function manejoDeContenedorBuscador(){
     console.log("hola")
     if(contenedorbuscador.className == "oculto"){
         contenedorbuscador.className = "buscador-ampliado";
     }
+    
     else{
         contenedorbuscador.className = "oculto";
     }
 }
+function manejoDeContenedorUsuario(){
+    console.log("hola")
+    if(userContenedor.className == "oculto"){
+        userContenedor.className = "user"
+    }
+    
+    else{
+        userContenedor.className = "oculto";
+    }
+}
+
 
 
 const options = {
